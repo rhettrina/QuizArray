@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Enviromental Science Quiz</title>
+</head>
+<body>
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+    
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of the Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds</span> per question</div>
+            <div class="info">2. Once you select your answer, you can't reselect</div>
+            <div class="info">3. You cannot select any option once time goes off</div>
+            <div class="info">4. You cannot exit the quiz while you are playing</div>
+            <div class="info">5. You will get points based on your answers</div>
+        </div>
+    
+        <div class="username_input_container">
+            <label for="username">Enter Your Name:</label>
+            <input type="text" id="username" class="username_input" placeholder="Your Name" required />
+        </div>
+    
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    
+    
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz Application</div>
+            <div class="timer">
+                <div class="time_text">time left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <div class="next_btn">Next</div>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="score_text"></div>
+        <div class="high_scores_container">
+          <h3>High Scores</h3>
+          <ul class="high_scores"></ul>
+        </div>
+        <div class="buttons">
+          <button class="restart">Restart Quiz</button>
+          <button class="quit">Quit Quiz</button>
+        </div>
+      </div>
+      
+    
+
+<script src="question.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
